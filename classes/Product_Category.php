@@ -10,7 +10,6 @@ class Product_Category  {
     function __construct($name_category)
     {
         $this->name_category = $name_category;
-        /* $this-> quantity = $quantity; */
     }
 
     public function getNameCategory() {
