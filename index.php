@@ -1,7 +1,7 @@
 <?php 
     include './includes/autoload.php';
 
-    $croccantini =new Product("food","croccantini","10","none",10);
+    
 
 ?>
 
