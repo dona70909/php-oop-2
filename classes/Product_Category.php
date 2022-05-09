@@ -14,6 +14,10 @@ class Product_Category extends Shop {
 
         parent::__construct($users,$orders);
     }
+
+    public function getNameCategory() {
+        echo $this->name_category;
+    }
 }
 
 ?>

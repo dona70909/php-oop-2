@@ -1,4 +1,8 @@
-<?php include './includes/autoload.php' ?>
+<?php 
+    include './includes/autoload.php';
+
+    $croccantini = new Product("food","10","10","3","Royal","10","none")
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +18,23 @@
 </head>
 <body>
     <main>
-        <?php  ?>
-        <?php  ?>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card col-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Product:</h5>
+                        <p><?php $croccantini->getNameProduct() ?></p>
+
+                        <h5>Category</h5>
+                        <p class="card-text"><?php $croccantini->getNameCategory() ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>        
     </main>
 </body>
 </html>
