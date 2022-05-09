@@ -1,6 +1,6 @@
 <?php
 
-    class User  {
+    class Customer  {
 
         const DISCOUNT = .2;
         protected $user_name;

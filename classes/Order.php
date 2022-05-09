@@ -5,11 +5,21 @@
         protected $number_products;
         protected $order_status;
 
-        function __construct($number_order,$number_products,$order_status)
+        protected $payment;
+
+        function __construct($number_order,$number_products,$order_status,$payment)
         {
             $this->number_order = $number_order;
             $this->number_products = $number_products;
             $this->order_status = $order_status;
+            $this->payment = $payment;
+        }
+
+
+        public function setPayment($payment)
+        {
+            if (!$payment instanceof Payment) return false;
+            $this->payment = $payment;
         }
     }
 ?>
