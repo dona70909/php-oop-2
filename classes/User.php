@@ -9,23 +9,29 @@
         protected $birth_date;
 
         protected $isRegistered;
-        protected $discount;
+    
 
 
-        function __construct($user_name,$user_lastname,$birt_date,$isRegistered,$discount)
+        function __construct($user_name,$user_lastname,$birt_date,$isRegistered)
         {
-            $this-> user_name = $user_name;
-            $this-> user_lastname = $user_lastname;
-            $this-> birth_date = $birt_date;
-            $this-> isRegistered = $isRegistered;
-            $this-> discount = $discount;
+            $this->user_name = $user_name;
+            $this->user_lastname = $user_lastname;
+            $this->birth_date = $birt_date;
+            $this->isRegistered = $isRegistered;
         }
 
 
-        public function setDiscount(){
-            if($this->isRegistered) {
-                $this->discount = self::DISCOUNT;
-            } 
+        public function getRegistered() {
+            return $this->isRegistered;
+        }
+
+
+        public function discount(){
+            if($this->isRegistered === true) {
+                return self::DISCOUNT;
+            } else {
+                return "You don't have any discounts";
+            }
         }
     }
 ?>
