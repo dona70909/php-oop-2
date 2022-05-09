@@ -1,14 +1,14 @@
 
 <?php
-    class Payment extends Order {
+    class Payment extends User {
 
         
         protected $amount;
         protected $expired_date;
 
-        function __construct($number_order,$number_products,$order_status,$amount,$expired_date)
+        function __construct($number_order,$number_products,$order_status, $user_name,$user_lastname,$birt_date,$isRegistered,$amount,$expired_date)
         {
-            parent::__construct($number_order,$number_products,$order_status);
+            parent:: __construct($number_order,$number_products,$order_status, $user_name,$user_lastname,$birt_date,$isRegistered);
             $this->amount = $amount;
             $this->$expired_date;
 

@@ -7,6 +7,8 @@
         protected $user_lastname;
         protected $birth_date;
         protected $isRegistered;
+
+        
     
 
 
