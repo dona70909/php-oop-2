@@ -1,7 +1,9 @@
 <?php 
     include './includes/autoload.php';
 
-    $croccantini = new Product("food","10","10","3","Royal","10","none")
+    $croccantini = new Product("food","10","10","3","Royal","10","none",2);
+
+    $user_1 = new User("gigi","sss",2010,true,"10");
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +47,15 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section> 
+        
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1><?php echo User::DISCOUNT ?></h1>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
