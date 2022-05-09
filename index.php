@@ -3,7 +3,6 @@
 
     $croccantini =new Product("food","croccantini","10","none",10);
 
-   
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +51,6 @@
         <section class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                   
                 </div>
             </div>
         </section>
