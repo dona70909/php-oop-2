@@ -5,13 +5,13 @@
     
         const SHOPTYPE = "pet shop";
 
-        protected $users;
+        protected $customers;
         protected $orders;
 
-        function __construct($users,$orders)
+        function __construct($customers,$orders)
         {
 
-            $this->users = $users;
+            $this->customers = $customers;
             $this->orders = $orders;
         }
     }
