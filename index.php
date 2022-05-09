@@ -1,9 +1,9 @@
 <?php 
     include './includes/autoload.php';
 
-    $croccantini = new Product("food","10","10","3","Royal","10","none",2);
+    $croccantini =new Product("food","croccantini","10","none",10);
 
-    $user_1 = new User("io","cognome","2022",true);
+   
 ?>
 
 <!DOCTYPE html>
@@ -52,8 +52,7 @@
         <section class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h1><?php var_dump($user_1->getRegistered()) ?></h1>
-                    <h1><?php var_dump($user_1->discount()) ?></h1>
+                   
                 </div>
             </div>
         </section>

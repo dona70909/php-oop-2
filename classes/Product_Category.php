@@ -2,17 +2,15 @@
 
 
 
-class Product_Category extends Shop {
+class Product_Category  {
 
     protected $name_category;
-    protected $quantity;
+    
 
-    function __construct($name_category,$quantity,$customers,$orders)
+    function __construct($name_category)
     {
         $this->name_category = $name_category;
-        $this-> quantity = $quantity;
-
-        parent::__construct($customers,$orders);
+        /* $this-> quantity = $quantity; */
     }
 
     public function getNameCategory() {

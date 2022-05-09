@@ -6,9 +6,9 @@
         protected $img_file;
         protected $price;
 
-        function __construct($name_category,$quantity,$customers,$orders,$name_product,$product_stock_quantity,$img_file,$price)
+        function __construct($name_category,$name_product,$product_stock_quantity,$img_file,$price)
         {
-            parent::__construct($name_category,$quantity,$customers,$orders);
+            parent::__construct($name_category);
 
             $this->name_product = $name_product;
             $this->product_stock_quantity = $product_stock_quantity;
