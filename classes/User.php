@@ -3,11 +3,9 @@
     class User {
 
         const DISCOUNT = .2;
-
         protected $user_name;
         protected $user_lastname;
         protected $birth_date;
-
         protected $isRegistered;
     
 
