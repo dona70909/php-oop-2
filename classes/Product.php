@@ -19,8 +19,12 @@
             echo $this->name_product;
         }
 
+        public function setPrice($price) {
+            return $this->price = $price;
+        }
+
         public function getPrice() {
-            echo $this->price;
+            return $this->price;
         }
     }
 ?>
